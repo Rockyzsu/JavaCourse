@@ -10,7 +10,10 @@ this.name=name;
 public void run()
 {
 	for(int i=0;i<10;i++)
-	System.out.println(name+" "+i);
+	if(count>0){
+	System.out.println("Name is "+name+" Time : "+i+" Count: "+count);
+	count--;
+}
 }
 
 
@@ -23,5 +26,6 @@ public static void main(String argv[])
 		
 
 }
-
+public int count=10;
+//public static int count=10;
 }
